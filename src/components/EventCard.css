@@ -1,0 +1,58 @@
+/* Event card styles */
+.event-card {
+  background: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Space inside the card */
+  margin: 15px; /* Space around the card */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  backdrop-filter: blur(15px); /* Blur effect for glass-like appearance */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+  display: flex; /* Flexbox for card content alignment */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align items */
+  text-align: center; /* Center align text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Event card image styles */
+.event-card img {
+  width: 100%; /* Full width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Event title styles */
+.event-card h3 {
+  font-size: 1.5em; /* Title font size */
+  margin: 10px 0; /* Space around title */
+  color: #ffffff; /* White text color for title */
+}
+
+/* Event details styles */
+.event-card p {
+  font-size: 1em; /* Standard font size for details */
+  margin: 5px 0; /* Space around details */
+  color: #ffffff; /* White text for details */
+}
+
+/* Event card hover effect */
+.event-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .event-card {
+      margin: 10px; /* Reduce margin on smaller screens */
+      padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .event-card h3 {
+      font-size: 1.2em; /* Smaller title font size on mobile */
+  }
+
+  .event-card p {
+      font-size: 0.9em; /* Smaller details font size on mobile */
+  }
+}

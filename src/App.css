@@ -1,0 +1,109 @@
+/* App container styles */
+.app {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center justify items */
+  min-height: 100vh; /* Full height of the viewport */
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)); /* Dark gradient background */
+  color: white; /* White text color for contrast */
+}
+
+/* Header styles */
+.app-header {
+  font-size: 2.5em; /* Large header font */
+  margin: 20px 0; /* Space around header */
+  text-align: center; /* Center align header text */
+}
+
+/* Search input styles */
+.search-input {
+  margin: 20px; /* Space around input */
+  padding: 10px; /* Space inside input */
+  width: 300px; /* Fixed width for input */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Slightly rounded corners */
+  outline: none; /* Remove outline */
+  font-size: 1em; /* Standard font size */
+  background: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+  color: #ffffff; /* White text for input */
+  backdrop-filter: blur(5px); /* Blur effect for input */
+  transition: background 0.3s ease; /* Smooth transition for background change */
+}
+
+/* Search input hover effect */
+.search-input:hover {
+  background: rgba(255, 255, 255, 0.2); /* Darker on hover */
+}
+
+/* Event list styles */
+.event-list {
+  display: flex; /* Flex display for event list */
+  flex-wrap: wrap; /* Allow wrapping of event cards */
+  justify-content: center; /* Center align event cards */
+  padding: 20px; /* Space around event list */
+}
+
+/* Modal styles */
+.modal {
+  background: rgba(255, 255, 255, 0.9); /* Light background for modal */
+  border-radius: 15px; /* Rounded corners */
+  backdrop-filter: blur(15px); /* Stronger blur for modal background */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Deep shadow for depth */
+}
+
+/* Modal close button styles */
+.close-button {
+  background: rgba(255, 255, 255, 0.2); /* Light background for button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for button */
+  color: #ffffff; /* White text color */
+  padding: 10px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor for buttons */
+  transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+/* Close button hover effect */
+.close-button:hover {
+  background: rgba(255, 255, 255, 0.3); /* Darker on hover */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering content horizontally */
+  background: linear-gradient(to bottom right, #000000, #B8E0F9); /* Background gradient */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Space around the content */
+  color: white; /* Default text color */
+}
+
+/* Search bar styles */
+.search-container {
+  margin-bottom: 20px; /* Space below the search bar */
+}
+
+/* Info text styles */
+.info-text {
+  font-size: 1.5em; /* Font size for the info text */
+  text-align: center; /* Centered text */
+  margin: 20px 0; /* Space around the text */
+  padding: 10px; /* Padding for text */
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  border-radius: 10px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Blur effect for a glass-like appearance */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  max-width: 600px; /* Maximum width for larger screens */
+  width: 100%; /* Make the text container take full width */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .info-text {
+      font-size: 1.2em; /* Smaller font size on mobile */
+  }
+}
+
